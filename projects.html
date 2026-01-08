@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Muhammad Zulfy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="gradient-text">ZULFY</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-projects">
+        <div class="container">
+            <h1 class="gradient-text">My Projects</h1>
+            <p>Kumpulan project yang telah saya kerjakan, dari game development hingga automation tools.</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="game">Games</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project 1: Stick Game -->
+                <div class="project-card glass" data-category="game">
+                    <div class="project-header">
+                        <div class="project-icon">🎮</div>
+                        <div class="project-links">
+                            <a href="https://github.com/ZulDev/Stick-Game" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <h3>Stick Game</h3>
+                    <p>Game pertama saya yang dikembangkan menggunakan C++ dan library SFML. Game ini merupakan platformer sederhana dengan karakter stick figure.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>SFML</span>
+                        <span>Game Dev</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Regis LTMPT Auto -->
+                <div class="project-card glass" data-category="automation">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <div class="project-links">
+                            <a href="https://github.com/ZulDev/Regis-ltmpt-auto" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <h3>Regis LTMPT Auto</h3>
+                    <p>Tools automation untuk registrasi LTMPT 2022 menggunakan Python dan Selenium. Program ini mengotomatiskan proses pengisian formulir.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Selenium</span>
+                        <span>Automation</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Click the Ball -->
+                <div class="project-card glass" data-category="game">
+                    <div class="project-header">
+                        <div class="project-icon">🔴</div>
+                        <div class="project-links">
+                            <a href="https://github.com/ZulDev/Click-The-Balls" target="_blank" class="project-link">Github</a>
+                        </div>
+                    </div>
+                    <h3>Game Click-The-Balls</h3>
+                    <p>Website game interaktif dengan JavaScript untuk bermain dan belajar tentang logika pemrograman.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Portfolio Website -->
+                <div class="project-card glass" data-category="web">
+                    <div class="project-header">
+                        <div class="project-icon">💼</div>
+                        <div class="project-links">
+                            <a href="https://zuldev.github.io/" target="_blank" class="project-link">Live</a>
+                            <a href="https://github.com/zuldev/zuldev.github.io" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p>Website portfolio pribadi dengan desain modern dan animasi smooth untuk menampilkan project dan skills.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Di bagian stat projects.html - UPDATE menjadi: -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="4">4</div> <!-- TAMBAH data-target -->
+                    <div class="stat-label">Total Projects</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="3">3</div> <!-- TAMBAH data-target -->
+                    <div class="stat-label">Categories</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="100">100</div> <!-- TAMBAH data-target -->
+                    <div class="stat-label">Open Source</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="gradient-text">Muhammad Zulfy</h3>
+                    <p>Programmer from Banjarmasin passionate about tech, gaming, and continuous learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/zuldev" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/muhammad-zulfy-66953b321/" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:2410010331zulfy@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Muhammad Zulfy. Made with 💙 and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

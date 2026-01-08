@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Muhammad Zulfy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="gradient-text">MUHAMMAD ZULFY</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-blog">
+        <div class="container">
+            <h1 class="gradient-text">My Blog</h1>
+            <p>Berbagai tulisan tentang programming, teknologi, dan pengalaman saya dalam dunia software development.</p>
+        </div>
+    </section>
+
+    <section class="featured-post">
+        <div class="container">
+            <h2 class="gradient-text">Featured Post</h2>
+            <div class="featured-card glass">
+                <div class="blog-image">🎮</div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 December 15, 2026</span>
+                        <span>⏱️ 5 min read</span>
+                    </div>
+                    <h3>Memulai Game Development dengan C++ dan SFML</h3>
+                    <p>Panduan lengkap untuk memulai perjalanan game development menggunakan C++ dan library SFML. Dari setup environment hingga membuat game sederhana pertama Anda.</p>
+                    <div class="blog-tags">
+                        <span>Game Development</span>
+                        <span>C++</span>
+                        <span>SFML</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-posts">
+        <div class="container">
+            <h2 class="gradient-text">Recent Posts</h2>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-card glass">
+                    <div class="blog-image">🤖</div>
+                    <div class="blog-meta">
+                        <span>📅 December 10, 2026</span>
+                        <span>⏱️ 8 min read</span>
+                    </div>
+                    <h3>Python Automation: Membuat Tools Registrasi Otomatis</h3>
+                    <p>Bagaimana saya membuat tools automation untuk membantu proses registrasi LTMPT menggunakan Python dan Selenium WebDriver.</p>
+                    <div class="blog-tags">
+                        <span>Python</span>
+                        <span>Automation</span>
+                        <span>Selenium</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card glass">
+                    <div class="blog-image">💻</div>
+                    <div class="blog-meta">
+                        <span>📅 December 5, 2026</span>
+                        <span>⏱️ 6 min read</span>
+                    </div>
+                    <h3>Membangun Portfolio Website dengan Desain Modern</h3>
+                    <p>Panduan step-by-step membangun website portfolio dengan glassmorphism design, particle effects, dan smooth animations.</p>
+                    <div class="blog-tags">
+                        <span>Web Development</span>
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card glass">
+                    <div class="blog-image">🐍</div>
+                    <div class="blog-meta">
+                        <span>📅 November 28, 2026</span>
+                        <span>⏱️ 7 min read</span>
+                    </div>
+                    <h3>Object-Oriented Programming di Python: Best Practices</h3>
+                    <p>Memahami konsep OOP dalam Python dan implementasi best practices untuk kode yang lebih clean dan maintainable.</p>
+                    <div class="blog-tags">
+                        <span>Python</span>
+                        <span>OOP</span>
+                        <span>Best Practices</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="blog-card glass">
+                    <div class="blog-image">🚀</div>
+                    <div class="blog-meta">
+                        <span>📅 November 20, 2026</span>
+                        <span>⏱️ 5 min read</span>
+                    </div>
+                    <h3>Learning Path: Dari Pemula ke Game Developer</h3>
+                    <p>Roadmap lengkap untuk menjadi game developer, dari memilih bahasa pemrograman hingga membuat game pertama Anda.</p>
+                    <div class="blog-tags">
+                        <span>Career</span>
+                        <span>Learning</span>
+                        <span>Game Dev</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="blog-card glass">
+                    <div class="blog-image">🛠️</div>
+                    <div class="blog-meta">
+                        <span>📅 November 15, 2026</span>
+                        <span>⏱️ 9 min read</span>
+                    </div>
+                    <h3>Essential Tools untuk Programmer di 2026</h3>
+                    <p>Kumpulan tools dan software yang sangat membantu dalam proses development, dari code editor hingga deployment.</p>
+                    <div class="blog-tags">
+                        <span>Tools</span>
+                        <span>Productivity</span>
+                        <span>Development</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="blog-card glass">
+                    <div class="blog-image">🎓</div>
+                    <div class="blog-meta">
+                        <span>📅 November 10, 2026</span>
+                        <span>⏱️ 4 min read</span>
+                    </div>
+                    <h3>Tips Belajar Programming untuk Mahasiswa Teknik Informatika</h3>
+                    <p>Tips dan strategi efektif untuk mahasiswa teknik informatika dalam menguasai programming dan persiapan karir.</p>
+                    <div class="blog-tags">
+                        <span>Tips</span>
+                        <span>Student</span>
+                        <span>Programming</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box glass">
+                <div class="newsletter-icon">📧</div>
+                <h2 class="gradient-text">Subscribe to My Newsletter</h2>
+                <p>Dapatkan update terbaru tentang tulisan, project, dan insights saya tentang dunia programming dan teknologi langsung ke inbox Anda.</p>
+                <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <small>No spam, unsubscribe anytime. Your email is safe with me.</small>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="gradient-text">Muhammad Zulfy</h3>
+                    <p>Programmer from Banjarmasin passionate about tech, gaming, and continuous learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/zuldev" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/muhammad-zulfy-66953b321/" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:2410010331zulfy@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Muhammad Zulfy. Made with 💙 and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

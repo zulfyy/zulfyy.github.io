@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Zulfy - Programmer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="gradient-text">MUHAMMAD ZULFY</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="nav-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="profile-glass">
+                        <img src="gambar.jpg" alt="Profile">
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">Muhammad Zulfy</span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <span id="typed-text"></span>
+                </div>
+                
+                <p class="hero-description">
+                    Seorang programmer dari Banjarmasin yang passionate dalam teknologi, 
+                    game development, dan terus belajar hal-hal baru dalam dunia programming.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">Lihat Projects</a>
+                    <a href="contact.html" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Languages</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Tools</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% Passion</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Featured Projects</span>
+            </h2>
+            
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-icon">🤖</div>
+                    <h3>Regis LTMPT Auto</h3>
+                    <p>Python automation untuk registrasi LTMPT</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Automation</span>
+                    </div>
+                    <a href="https://github.com/ZulDev/Regis-ltmpt-auto" target="_blank" class="btn btn-outline">View Code</a>
+                </div>
+                
+                <div class="project-card glass">
+                    <div class="project-icon">🎮</div>
+                    <h3>Stick Game</h3>
+                    <p>Game pertama dengan C++ dan SFML</p>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>SFML</span>
+                    </div>
+                    <a href="https://github.com/ZulDev/Stick-Game" target="_blank" class="btn btn-outline">View Code</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="gradient-text">Muhammad Zulfy</h3>
+                    <p>Programmer from Banjarmasin passionate about tech, gaming, and continuous learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/zuldev" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/muhammad-zulfy-66953b321/" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:2410010331zulfy@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Muhammad Zulfy. Made with 💙 and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
